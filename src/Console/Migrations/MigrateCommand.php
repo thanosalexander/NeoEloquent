@@ -97,6 +97,7 @@ class MigrateCommand extends BaseCommand
             array('pretend', null, InputOption::VALUE_NONE, 'Dump the SQL queries that would be run.'),
 
             array('seed', null, InputOption::VALUE_NONE, 'Indicates if the seed task should be re-run.'),
+            array('step', null, InputOption::VALUE_NONE, 'Force the migrations to be run so they can be rolled back individually.'),
         );
     }
 }
