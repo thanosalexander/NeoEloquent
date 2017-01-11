@@ -28,6 +28,6 @@ class Neo4jSchema extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return static::$app['db']->connection()->getSchemaBuilder();
+        return app('neoeloquent.connection')->getSchemaBuilder();
     }
 }

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d60de1-3254-4fae-bec0-16483d22b68d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Console/Migrations/MigrateCommand.php" afterPath="$PROJECT_DIR$/src/Console/Migrations/MigrateCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php" afterPath="$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Facade/Neo4jSchema.php" afterPath="$PROJECT_DIR$/src/Facade/Neo4jSchema.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frameworks/Laravel/Connection.php" afterPath="$PROJECT_DIR$/src/Frameworks/Laravel/Connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Schema/Blueprint.php" afterPath="$PROJECT_DIR$/src/Schema/Blueprint.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,9 +23,11 @@
       <file leaf-file-name="DatabaseMigrationRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="1062">
+              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+              <folding>
+                <element signature="e#50#114#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1484143709276</updated>
-      <workItem from="1484143710500" duration="623000" />
+      <workItem from="1484143710500" duration="1928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="623000" />
+    <option name="totallyTimeSpent" value="1928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="82" width="1845" height="1118" extended-state="0" />
@@ -175,9 +179,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="1062">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#50#114#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

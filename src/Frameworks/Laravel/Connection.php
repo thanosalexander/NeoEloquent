@@ -386,6 +386,12 @@ class Connection extends BaseConnection implements ConnectionInterface
         $this->neoeloquent->logQuery($query, $bindings, $time, null);
 	}
 
+    public function query()
+    {
+        return new \Vinelab\NeoEloquent\Query\Builder(
+            $this, $this->getQueryGrammar(), $this->getPostProcessor()
+        );
+    }
 	/**
 	 * Register a database query listener with the connection.
 	 *

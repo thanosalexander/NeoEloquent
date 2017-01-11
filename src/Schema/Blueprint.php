@@ -3,8 +3,9 @@
 namespace Vinelab\NeoEloquent\Schema;
 
 use Closure;
-use Illuminate\Database\ConnectionInterface;
+
 use Illuminate\Database\Schema\Grammars\Grammar as IlluminateSchemaGrammar;
+use Vinelab\NeoEloquent\ConnectionInterface;
 use Vinelab\NeoEloquent\Support\Fluent;
 
 class Blueprint
