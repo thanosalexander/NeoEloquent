@@ -1454,8 +1454,9 @@ class Builder
         if (isset($this->groups)) {
             return count($results);
         }
-
-        return isset($results[0]) ? (int) array_change_key_case((array) $results[0])['aggregate'] : 0;
+        $count = $results->get('count(*)');
+//        return isset($results[0]) ? (int) array_change_key_case((array) $results[0])['aggregate'] : 0;
+        return !is_null($count) ? $count : 0;
     }
 
     /**
