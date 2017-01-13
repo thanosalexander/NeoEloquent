@@ -10,7 +10,7 @@ use LogicException;
 use JsonSerializable;
 use Vinelab\NeoEloquent\Contracts\Support\Jsonable;
 use Vinelab\NeoEloquent\Contracts\Events\Dispatcher;
-use Vinelab\NeoEloquent\Contracts\Support\Arrayable;
+use Illuminate\Contracts\Support\Arrayable;
 use Vinelab\NeoEloquent\Contracts\Routing\UrlRoutable;
 use Vinelab\NeoEloquent\Contracts\Queue\QueueableEntity;
 use Illuminate\Database\ConnectionResolverInterface as Resolver;
