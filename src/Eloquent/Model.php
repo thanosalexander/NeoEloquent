@@ -6,11 +6,12 @@ use DateTime;
 use Exception;
 use ArrayAccess;
 use Carbon\Carbon;
+use Illuminate\Contracts\Support\Arrayable;
 use LogicException;
 use JsonSerializable;
 use Vinelab\NeoEloquent\Contracts\Support\Jsonable;
 use Vinelab\NeoEloquent\Contracts\Events\Dispatcher;
-use Illuminate\Contracts\Support\Arrayable;
+
 use Vinelab\NeoEloquent\Contracts\Routing\UrlRoutable;
 use Vinelab\NeoEloquent\Contracts\Queue\QueueableEntity;
 use Illuminate\Database\ConnectionResolverInterface as Resolver;
