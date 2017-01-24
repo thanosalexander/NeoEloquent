@@ -219,6 +219,18 @@ class Collection extends BaseCollection
     }
 
     /**
+     * Make the given, typically hidden, attributes visible across the entire collection.
+     *
+     * @param  array|string  $attributes
+     * @return $this
+     */
+    public function makeVisible($attributes)
+    {
+        return $this->each(function ($model) use ($attributes) {
+            $model->makeVisible($attributes);
+        });
+    }
+    /**
      * Get a dictionary keyed by primary keys.
      *
      * @param \ArrayAccess|array $items
