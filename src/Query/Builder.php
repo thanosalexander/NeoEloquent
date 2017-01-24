@@ -2375,6 +2375,10 @@ class Builder
         return (bool) $result->getNodesCount();
     }
 
+    public function toSql()
+    {
+        return $this->grammar->compileSelect($this);
+    }
     /**
      * Handle dynamic method calls into the method.
      *

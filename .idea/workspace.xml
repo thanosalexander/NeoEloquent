@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d60de1-3254-4fae-bec0-16483d22b68d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloquent/Model.php" afterPath="$PROJECT_DIR$/src/Eloquent/Model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Migrations/stubs/blank.stub" afterPath="$PROJECT_DIR$/src/Migrations/stubs/blank.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Migrations/stubs/create.stub" afterPath="$PROJECT_DIR$/src/Migrations/stubs/create.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Migrations/stubs/update.stub" afterPath="$PROJECT_DIR$/src/Migrations/stubs/update.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Query/Builder.php" afterPath="$PROJECT_DIR$/src/Query/Builder.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,16 +40,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25974">
               <caret line="1458" column="45" lean-forward="false" selection-start-line="1458" selection-start-column="45" selection-end-line="1458" selection-end-column="45" />
-              <folding />
+              <folding>
+                <marker date="1485269413686" expanded="true" signature="62650:62851" ph=" Handle dynamic method calls into the method. ..." />
+                <marker date="1485269413686" expanded="true" signature="62957:63028" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="2304" column="5" lean-forward="false" selection-start-line="2304" selection-start-column="5" selection-end-line="2304" selection-end-column="5" />
+            <state relative-caret-position="121">
+              <caret line="2273" column="7" lean-forward="false" selection-start-line="2273" selection-start-column="7" selection-end-line="2273" selection-end-column="7" />
               <folding>
                 <element signature="e#48#61#0#PHP" expanded="true" />
               </folding>
@@ -52,7 +60,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>make</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +86,7 @@
         <option value="$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php" />
         <option value="$PROJECT_DIR$/src/Query/Builder.php" />
         <option value="$PROJECT_DIR$/src/Eloquent/Model.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -202,7 +226,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3623000" />
+    <option name="totallyTimeSpent" value="3660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1855" height="1176" extended-state="6" />
@@ -252,7 +276,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25974">
           <caret line="1458" column="45" lean-forward="false" selection-start-line="1458" selection-start-column="45" selection-end-line="1458" selection-end-column="45" />
-          <folding />
+          <folding>
+            <marker date="1485269413686" expanded="true" signature="62650:62851" ph=" Handle dynamic method calls into the method. ..." />
+            <marker date="1485269413686" expanded="true" signature="62957:63028" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -280,7 +307,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1485269413686" expanded="true" signature="62650:62851" ph=" Handle dynamic method calls into the method. ..." />
+            <marker date="1485269413686" expanded="true" signature="62957:63028" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -308,7 +338,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25974">
           <caret line="1458" column="45" lean-forward="false" selection-start-line="1458" selection-start-column="45" selection-end-line="1458" selection-end-column="45" />
-          <folding />
+          <folding>
+            <marker date="1485269413686" expanded="true" signature="62650:62851" ph=" Handle dynamic method calls into the method. ..." />
+            <marker date="1485269413686" expanded="true" signature="62957:63028" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -319,6 +352,107 @@
           <folding>
             <element signature="e#48#61#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#50#114#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Query/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25974">
+          <caret line="1458" column="45" lean-forward="false" selection-start-line="1458" selection-start-column="45" selection-end-line="1458" selection-end-column="45" />
+          <folding>
+            <marker date="1485269413686" expanded="true" signature="62650:62851" ph=" Handle dynamic method calls into the method. ..." />
+            <marker date="1485269413686" expanded="true" signature="62957:63028" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#50#114#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Query/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1485269413686" expanded="true" signature="62650:62851" ph=" Handle dynamic method calls into the method. ..." />
+            <marker date="1485269413686" expanded="true" signature="62957:63028" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#114#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#50#114#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Query/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25974">
+          <caret line="1458" column="45" lean-forward="false" selection-start-line="1458" selection-start-column="45" selection-end-line="1458" selection-end-column="45" />
+          <folding>
+            <marker date="1485269413686" expanded="true" signature="62650:62851" ph=" Handle dynamic method calls into the method. ..." />
+            <marker date="1485269413686" expanded="true" signature="62957:63028" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="2273" column="7" lean-forward="false" selection-start-line="2273" selection-start-column="7" selection-end-line="2273" selection-end-column="7" />
+          <folding>
+            <element signature="e#48#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
