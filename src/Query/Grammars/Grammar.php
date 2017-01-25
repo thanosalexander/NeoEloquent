@@ -296,8 +296,8 @@ abstract class Grammar
         if (!is_null($relation)) {
             $labels = 'with_'.$relation.'_'.$labels;
         }
-
-        return mb_strtolower($labels);
+        return lcfirst($labels);
+//        return mb_strtolower($labels);
     }
 
     /**
