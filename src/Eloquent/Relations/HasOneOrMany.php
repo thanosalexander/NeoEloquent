@@ -940,7 +940,11 @@ abstract class HasOneOrMany extends Relation implements RelationInterface
      */
     public function getRelatedNode()
     {
-        return $this->query->getQuery()->modelAsNode($this->related->nodeLabel());
+        $postfix = "";
+        if($this->related->nodeLabel() == $this->parent->nodeLabel()){
+            $postfix = "x";
+        }
+        return $this->query->getQuery()->modelAsNode($this->related->nodeLabel()).$postfix;
     }
 
     /**
