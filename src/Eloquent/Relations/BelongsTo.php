@@ -53,7 +53,7 @@ class BelongsTo extends OneRelation
             // Set the parent node's placeholder as the RETURN key.
             $this->query->getQuery()->from = array($parentNode);
             // Build the MATCH ()<-[]-() Cypher clause.
-            $this->query->matchIn($this->parent, $this->related, $this->relation, $this->relationType, $this->otherKey, $this->parent->{$this->otherKey});
+            $this->query->matchIn($this->parent, $this->related, $this->relation, $this->relationType, $this->parent->getKeyName(), $this->parent->getKey());
             // Add WHERE clause over the parent node's matching key = value.
             $this->query->where($this->parent->getKeyName(), '=', $this->parent->getKey());
         }
