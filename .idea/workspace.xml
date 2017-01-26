@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50d60de1-3254-4fae-bec0-16483d22b68d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloquent/Relations/HasOneOrMany.php" afterPath="$PROJECT_DIR$/src/Eloquent/Relations/HasOneOrMany.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloquent/Relations/OneRelation.php" afterPath="$PROJECT_DIR$/src/Eloquent/Relations/OneRelation.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,17 +67,17 @@
         <entry file="file://$PROJECT_DIR$/src/Query/Grammars/Grammar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="5670">
-              <caret line="318" column="5" lean-forward="true" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
+              <caret line="318" column="5" lean-forward="false" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BelongsTo.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BelongsTo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="62" column="51" lean-forward="true" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
+            <state relative-caret-position="720">
+              <caret line="62" column="51" lean-forward="false" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -88,14 +86,14 @@
       <file leaf-file-name="HasOneOrMany.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasOneOrMany.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="947" column="5" lean-forward="true" selection-start-line="940" selection-start-column="4" selection-end-line="947" selection-end-column="5" />
+            <state relative-caret-position="16938">
+              <caret line="947" column="5" lean-forward="false" selection-start-line="940" selection-start-column="4" selection-end-line="947" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OneRelation.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OneRelation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/OneRelation.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="761">
@@ -108,7 +106,7 @@
       <file leaf-file-name="HasOne.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasOne.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
+            <state relative-caret-position="2934">
               <caret line="165" column="25" lean-forward="false" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
               <folding />
             </state>
@@ -181,8 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,6 +287,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,12 +371,13 @@
       <workItem from="1484321184560" duration="1024000" />
       <workItem from="1485269327982" duration="49000" />
       <workItem from="1485344214875" duration="3239000" />
-      <workItem from="1485447884133" duration="118000" />
+      <workItem from="1485447884133" duration="771000" />
+      <workItem from="1485451858880" duration="609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8780000" />
+    <option name="totallyTimeSpent" value="10042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1855" height="1176" extended-state="6" />
@@ -414,6 +413,92 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#50#114#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Query/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25974">
+          <caret line="1458" column="45" lean-forward="false" selection-start-line="1458" selection-start-column="45" selection-end-line="1458" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28116">
+          <caret line="1588" column="48" lean-forward="false" selection-start-line="1588" selection-start-column="48" selection-end-line="1588" selection-end-column="48" />
+          <folding>
+            <element signature="e#48#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="e#48#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Query/Grammars/Grammar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5670">
+          <caret line="318" column="5" lean-forward="false" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="62" column="51" lean-forward="false" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasOneOrMany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16938">
+          <caret line="947" column="5" lean-forward="false" selection-start-line="940" selection-start-column="4" selection-end-line="947" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/OneRelation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasOne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2934">
+          <caret line="165" column="25" lean-forward="false" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
@@ -711,22 +796,14 @@
     <entry file="file://$PROJECT_DIR$/src/Query/Grammars/Grammar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5670">
-          <caret line="318" column="5" lean-forward="true" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="62" column="51" lean-forward="true" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
+          <caret line="318" column="5" lean-forward="false" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasOne.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
+        <state relative-caret-position="2934">
           <caret line="165" column="25" lean-forward="false" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
           <folding />
         </state>
@@ -734,8 +811,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasOneOrMany.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="947" column="5" lean-forward="true" selection-start-line="940" selection-start-column="4" selection-end-line="947" selection-end-column="5" />
+        <state relative-caret-position="16938">
+          <caret line="947" column="5" lean-forward="false" selection-start-line="940" selection-start-column="4" selection-end-line="947" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -744,6 +821,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="761">
           <caret line="353" column="5" lean-forward="false" selection-start-line="353" selection-start-column="5" selection-end-line="353" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="62" column="51" lean-forward="false" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
           <folding />
         </state>
       </provider>
