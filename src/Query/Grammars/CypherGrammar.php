@@ -717,6 +717,49 @@ class CypherGrammar extends Grammar
     {
         // We always need the MATCH clause in our Cypher which
         // is the responsibility of compiling the From component.
+        $matchComponent = $this->compileComponents($query, array('matches'));
+        $matchCypher = $matchComponent['matches'];
+
+        $where = is_array($query->wheres) ? $this->compileWheres($query) : '';
+
+        // by default we assume that we're deleting the start node
+        // so we set the identifier accordingly (the placeholder of the startn node)
+        $returnIdentifiers = $query->modelAsNode();
+
+        // now we determine whether we're deleting a relationship,
+        // in this case the identifier that we're targeting is
+        // then the identifier of the relationship and the end node.
+        if ($isRelationship) {
+            // when deleting the relationship we should not delete
+            // the start node, only the relationship and optionally
+            // the end node so we will clear whatever identifier we had.
+            $returnIdentifiers = '';
+            foreach ($query->matches as $match) {
+                // determine whether we should also delete the end node
+                if (!$shouldKeepEndNode) {
+                    $returnIdentifiers .= $match['related']['node'].', ';
+                }
+
+                $returnIdentifiers .= $this->getRelationIdentifier($match['relationship'], $match['related']['node']);
+            }
+
+            $matchCypher .= $where;
+        } else {
+
+            // when deleting the start node must not have any relations left
+            // so when asked to delete the start node we'll add an
+            // OPTIONAL MATCH (n)-[r]-() where n is the node
+            // we're matching in this query.
+            $matchCypher .= $where.' OPTIONAL MATCH ('.$query->modelAsNode().')-[r]-()';
+            $returnIdentifiers .= ', r';
+        }
+
+        return "$matchCypher DELETE $returnIdentifiers";
+    }
+    public function __compileDelete(Builder $query, $isRelationship = false, $shouldKeepEndNode = false)
+    {
+        // We always need the MATCH clause in our Cypher which
+        // is the responsibility of compiling the From component.
         if (empty($query->matches)) {
             $matches = $this->compileComponents($query, ['from']);
             $matches = $matches['from'];
@@ -740,7 +783,6 @@ class CypherGrammar extends Grammar
         }
         return $cypher;
     }
-
     public function compileWith(Builder $query, $with)
     {
         $parts = [];
