@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d60de1-3254-4fae-bec0-16483d22b68d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Query/Grammars/CypherGrammar.php" afterPath="$PROJECT_DIR$/src/Query/Grammars/CypherGrammar.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +65,7 @@
       <file leaf-file-name="BelongsTo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="972">
               <caret line="55" column="157" lean-forward="false" selection-start-line="55" selection-start-column="157" selection-end-line="55" selection-end-column="157" />
               <folding />
             </state>
@@ -74,8 +75,8 @@
       <file leaf-file-name="CypherGrammar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Query/Grammars/CypherGrammar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="758" column="25" lean-forward="true" selection-start-line="758" selection-start-column="25" selection-end-line="758" selection-end-column="25" />
+            <state relative-caret-position="337">
+              <caret line="719" column="33" lean-forward="false" selection-start-line="719" selection-start-column="20" selection-end-line="719" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -130,6 +131,7 @@
       <find>collection</find>
       <find>getRel</find>
       <find>We always need the MATCH clause in our</find>
+      <find>compileUpdate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -287,7 +290,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -374,12 +376,13 @@
       <workItem from="1485447884133" duration="771000" />
       <workItem from="1485451858880" duration="1565000" />
       <workItem from="1485456927348" duration="659000" />
-      <workItem from="1485778332964" duration="1993000" />
+      <workItem from="1485778332964" duration="2611000" />
+      <workItem from="1485861844373" duration="55000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13650000" />
+    <option name="totallyTimeSpent" value="14323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1855" height="1176" extended-state="6" />
@@ -443,9 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,9 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,9 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,9 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,9 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,9 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,9 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,9 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,9 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,9 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,9 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#114#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,7 +823,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="972">
           <caret line="55" column="157" lean-forward="false" selection-start-line="55" selection-start-column="157" selection-end-line="55" selection-end-column="157" />
           <folding />
         </state>
@@ -861,8 +831,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Query/Grammars/CypherGrammar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="758" column="25" lean-forward="true" selection-start-line="758" selection-start-column="25" selection-end-line="758" selection-end-column="25" />
+        <state relative-caret-position="337">
+          <caret line="719" column="33" lean-forward="false" selection-start-line="719" selection-start-column="20" selection-end-line="719" selection-end-column="33" />
           <folding />
         </state>
       </provider>

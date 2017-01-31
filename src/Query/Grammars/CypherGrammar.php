@@ -464,6 +464,10 @@ class CypherGrammar extends Grammar
         $match = $this->compileComponents($query, array('from'));
         $match = $match['from'];
 
+        // Query from relationship
+        if($match == ""){
+            $match = $this->compileMatches($query, $query->matches);
+        }
         // When updating we need to return the count of the affected nodes
         // so we trick the Columns compiler into returning that for us.
         $return = $this->compileColumns($query, array('count('.$query->modelAsNode().')'));
