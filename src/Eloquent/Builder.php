@@ -1362,7 +1362,14 @@ class Builder
              * Which is the result of Post::has('comments', '>=', 10)->get();
              */
             $countPart = $prefix.'_count';
-            $this->carry([$relation->getParentNode(), "count($prefix)" => $countPart]);
+            $matches = [];
+            foreach($this->query->matches as $match){
+                $matches[] = [$match['parent']['node']][0];
+            }
+            $matches[] = $relation->getParentNode();
+            $matches["count($prefix)"] =  $countPart;
+            $this->carry($matches);
+
             $this->whereCarried($countPart, $operator, $count);
         }
 

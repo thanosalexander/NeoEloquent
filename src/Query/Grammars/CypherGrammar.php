@@ -713,9 +713,12 @@ class CypherGrammar extends Grammar
     /**
      * Compile a delete statement into Cypher.
      *
-     * @param \Illuminate\Database\Query\Builder $query
-     *
+     * @param Builder $query
+     * @param bool $isRelationship
+     * @param bool $shouldKeepEndNode
      * @return string
+     * @internal param $
+     *
      */
     public function compileDelete(Builder $query, $isRelationship = false, $shouldKeepEndNode = false)
     {
