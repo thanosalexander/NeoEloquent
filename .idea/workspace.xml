@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d60de1-3254-4fae-bec0-16483d22b68d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloquent/Model.php" afterPath="$PROJECT_DIR$/src/Eloquent/Model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloquent/Relations/HasOne.php" afterPath="$PROJECT_DIR$/src/Eloquent/Relations/HasOne.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HasOne.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HasOne.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasOne.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="74" column="91" lean-forward="false" selection-start-line="74" selection-start-column="91" selection-end-line="74" selection-end-column="91" />
+            <state relative-caret-position="702">
+              <caret line="109" column="146" lean-forward="true" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="146" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Eloquent/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="2669" column="75" lean-forward="false" selection-start-line="2669" selection-start-column="75" selection-end-line="2669" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -67,6 +78,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BelongsTo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="95" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HasMany.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasMany.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,26 +113,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3366">
               <caret line="193" column="20" lean-forward="false" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OneRelation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/OneRelation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6084">
-              <caret line="341" column="11" lean-forward="false" selection-start-line="341" selection-start-column="11" selection-end-line="341" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RelationInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/RelationInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -148,7 +149,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/Migrations/DatabaseMigrationRepository.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Eloquent/Model.php" />
         <option value="$PROJECT_DIR$/src/Eloquent/Collection.php" />
         <option value="$PROJECT_DIR$/src/Query/Grammars/Grammar.php" />
         <option value="$PROJECT_DIR$/src/Eloquent/Relations/HasOneOrMany.php" />
@@ -159,6 +159,7 @@
         <option value="$PROJECT_DIR$/src/Eloquent/Edges/Edge.php" />
         <option value="$PROJECT_DIR$/src/Query/Builder.php" />
         <option value="$PROJECT_DIR$/src/Eloquent/Relations/HasOne.php" />
+        <option value="$PROJECT_DIR$/src/Eloquent/Model.php" />
       </list>
     </option>
   </component>
@@ -326,7 +327,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/NeoEloquent" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
@@ -411,12 +412,12 @@
       <workItem from="1485861844373" duration="1242000" />
       <workItem from="1486469679497" duration="2199000" />
       <workItem from="1486635948566" duration="3222000" />
-      <workItem from="1486654396088" duration="658000" />
+      <workItem from="1486654396088" duration="2839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21589000" />
+    <option name="totallyTimeSpent" value="23770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1855" height="1176" extended-state="6" />
@@ -756,16 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloquent/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="676" column="5" lean-forward="true" selection-start-line="676" selection-start-column="5" selection-end-line="676" selection-end-column="5" />
-          <folding>
-            <element signature="e#48#61#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloquent/Collection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -780,14 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5670">
           <caret line="318" column="5" lean-forward="false" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="55" column="157" lean-forward="false" selection-start-line="55" selection-start-column="157" selection-end-line="55" selection-end-column="157" />
           <folding />
         </state>
       </provider>
@@ -864,10 +847,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/BelongsTo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="95" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloquent/Relations/HasOne.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="74" column="91" lean-forward="false" selection-start-line="74" selection-start-column="91" selection-end-line="74" selection-end-column="91" />
+        <state relative-caret-position="702">
+          <caret line="109" column="146" lean-forward="true" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="146" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="2669" column="75" lean-forward="false" selection-start-line="2669" selection-start-column="75" selection-end-line="2669" selection-end-column="75" />
           <folding />
         </state>
       </provider>

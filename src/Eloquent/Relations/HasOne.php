@@ -107,9 +107,9 @@ class HasOne extends HasOneOrMany
         // Set the parent node's placeholder as the RETURN key.
         $this->query->getQuery()->from = array($parentNode);
         // Build the MATCH ()-[]->() Cypher clause.
-        $this->query->matchOut($this->parent, $this->related, $this->relation, $this->type, $this->localKey, $this->parent->{$this->localKey});
+        $this->query->matchOut($this->parent, $this->related, $this->relation, $this->type, $this->parent->getKeyName(), $this->parent->getKey());
         // Add WHERE clause over the parent node's matching keys [values...].
-        $this->query->whereIn($this->localKey, $this->getKeys($models));
+        $this->query->whereIn($this->parent->getKeyName(), $this->getKeys($models));
 
     }
 

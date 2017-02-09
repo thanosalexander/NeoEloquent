@@ -2667,7 +2667,7 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
             // If the values implements the Arrayable interface we can just call this
             // toArray method on the instances which will convert both models and
             // collections to their proper array form and we'll set the values.
-            if ($value instanceof Arrayable) {
+            if ($value instanceof Arrayable || $value instanceof Collection) {
                 $relation = $value->toArray();
             }
 
