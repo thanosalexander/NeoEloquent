@@ -217,10 +217,7 @@ abstract class Edge extends Delegate
         if ($saved) {
             // Let's refresh the relation we alreay have set so that
             // we make sure that it is totally in sync with the saved one.
-            $lastRelationship = current($saved->getRelationships());
-            if($lastRelationship instanceof Relationship) {
-                $this->setRelation($lastRelationship);
-            }
+            $this->setRelation(current($saved->getRelationships()));
 
             return true;
         }
