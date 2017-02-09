@@ -211,8 +211,8 @@ abstract class Edge extends Delegate
                 $instance->delete();
             }
         }
-        $this->setRelationProperties($this->toArray());
-//        $saved = $this->saveRelationship($this->type, $this->parent, $this->related, $this->attributes);
+//        $this->setRelationProperties($this->toArray());
+        $saved = $this->saveRelationship($this->type, $this->parent, $this->related, $this->attributes);
         $saved = $this->relation->save();
 
         if ($saved) {
