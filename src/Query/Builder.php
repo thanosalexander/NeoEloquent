@@ -1841,7 +1841,7 @@ class Builder
     {
         if (is_array($this->wheres)) {
             return count(array_filter($this->wheres, function ($where) use ($column) {
-                return $where['column'] == $column;
+                return array_key_exists('column', $where) && $where['column'] == $column;
             }));
         }
     }
