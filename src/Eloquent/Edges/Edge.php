@@ -211,15 +211,16 @@ abstract class Edge extends Delegate
                 $instance->delete();
             }
         }
-//        $this->setRelationProperties($this->toArray());
+
         $saved = $this->saveRelationship($this->type, $this->parent, $this->related, $this->attributes);
-        $saved = $this->relation->save();
 
         if ($saved) {
             // Let's refresh the relation we alreay have set so that
             // we make sure that it is totally in sync with the saved one.
-//            $this->setRelation(current($saved->getRelationships()));
-            $this->setRelation($this->relation);
+            $lastRelationship = current($saved->getRelationships());
+            if($lastRelationship instanceof Relationship) {
+                $this->setRelation($lastRelationship);
+            }
 
             return true;
         }
@@ -236,16 +237,6 @@ abstract class Edge extends Delegate
         return $this->connection->statement($query, [], true);
     }
 
-    public function setRelationProperties(array $properties = array())
-    {
-        // Go through the properties and assign them
-        // to the relation.
-        foreach ($properties as $key => $value)
-        {
-            $this->relation->setProperty($key, $value);
-        }
-
-    }
     /**
      * Remove the relationship from the database.
      *
