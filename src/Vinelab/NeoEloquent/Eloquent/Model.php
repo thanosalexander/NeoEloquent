@@ -14,7 +14,7 @@ use Vinelab\NeoEloquent\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Model as IlluminateModel;
 use Vinelab\NeoEloquent\Eloquent\Builder as EloquentBuilder;
 
-abstract class Model {
+abstract class Model extends IlluminateModel{
 
     /**
      * The node label
@@ -244,16 +244,19 @@ abstract class Model {
     }
 
     /**
-     * @override
      * Define a many-to-many relationship.
      *
      * @param  string  $related
-     * @param  string  $type
-     * @param  string  $key
+     * @param  string  $table
+     * @param  string  $foreignPivotKey
+     * @param  string  $relatedPivotKey
+     * @param  string  $parentKey
+     * @param  string  $relatedKey
      * @param  string  $relation
-     * @return \Vinelab\NeoEloquent\Eloquent\Relations\BelongsToMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function belongsToMany($related, $table = null, $foreignKey = null, $otherKey = null, $relation = null)
+    public function belongsToMany($related, $table = null, $foreignPivotKey = null, $relatedPivotKey = null,
+                                  $parentKey = null, $relatedKey = null, $relation = null)
     {
         // To escape the error:
         // PHP Strict standards:  Declaration of Vinelab\NeoEloquent\Eloquent\Model::belongsToMany() should be
@@ -433,15 +436,15 @@ abstract class Model {
     }
 
     /**
-     * @override
      * Define a polymorphic, inverse one-to-one or many relationship.
      *
      * @param  string  $name
      * @param  string  $type
      * @param  string  $id
+     * @param  string  $ownerKey
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function morphTo($name = null, $type = null, $id = null)
+    public function morphTo($name = null, $type = null, $id = null, $ownerKey = null)
     {
 
         // When the name and the type are specified we'll return a MorphedByOne
