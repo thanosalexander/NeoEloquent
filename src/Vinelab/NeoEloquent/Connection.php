@@ -148,13 +148,12 @@ class Connection extends IlluminateConnection {
     /**
      * Get an option from the configuration options.
      *
-     * @param  string   $option
-     * @param  mixed    $default
+     * @param  string|null  $option
      * @return mixed
      */
-    public function getConfig($option, $default = null)
+    public function getConfig($option = null)
     {
-        return array_get($this->config, $option, $default);
+        return array_get($this->config, $option, null);
     }
 
     /**
@@ -171,12 +170,13 @@ class Connection extends IlluminateConnection {
      * Run a select statement against the database.
      *
      * @param  string  $query
-     * @param  array   $bindings
+     * @param  array  $bindings
+     * @param  bool  $useReadPdo
      * @return array
      */
-    public function select($query, $bindings = array())
+    public function select($query, $bindings = [], $useReadPdo = true)
     {
-        return $this->run($query, $bindings, function(self $me, $query, array $bindings)
+        return $this->run($query, $bindings, function(self $me, $query, array $bindings) use ($useReadPdo)
         {
             if ($me->pretending()) return array();
 
@@ -393,23 +393,88 @@ class Connection extends IlluminateConnection {
     /**
      * Rollback the active database transaction.
      *
+     * @param  int|null  $toLevel
      * @return void
+     *
+     * @throws \Exception
      */
-    public function rollBack()
+    public function rollBack($toLevel = null)
     {
-        if ($this->transactions == 1)
-        {
-            $this->transactions = 0;
 
-            $this->transaction->rollBack();
+
+        // Next, we will actually perform this rollback within this database and fire the
+        // rollback event. We will also set the current transaction level to the given
+        // level that was passed into this method so it will be right from here out.
+        try {
+
+            if ($this->transactions == 1)
+            {
+                $this->transactions = 0;
+
+                $this->transaction->rollBack();
+            }
+            else
+            {
+                --$this->transactions;
+            }
+
+        } catch (Exception $e) {
+            $this->handleRollBackException($e);
         }
-        else
-        {
-            --$this->transactions;
-        }
+
+
+        $this->transactions = $toLevel;
 
         $this->fireConnectionEvent('rollingBack');
     }
+
+    /**
+     * Handle an exception from a rollback.
+     *
+     * @param \Exception  $e
+     *
+     * @throws \Exception
+     */
+    protected function handleRollBackException($e)
+    {
+        if ($this->causedByLostConnection($e)) {
+            $this->transactions = 0;
+        }
+
+        throw $e;
+    }
+
+    /**
+     * Determine if the given exception was caused by a lost connection.
+     *
+     * @param  \Throwable  $e
+     * @return bool
+     */
+    protected function causedByLostConnection(\Throwable $e)
+    {
+        $message = $e->getMessage();
+
+        return Str::contains($message, [
+            'server has gone away',
+            'no connection to the server',
+            'Lost connection',
+            'is dead or not enabled',
+            'Error while sending',
+            'decryption failed or bad record mac',
+            'server closed the connection unexpectedly',
+            'SSL connection has been closed unexpectedly',
+            'Error writing data to the connection',
+            'Resource deadlock avoided',
+            'Transaction() on null',
+            'child connection forced to terminate due to client_idle_limit',
+            'query_wait_timeout',
+            'reset by peer',
+            'Physical connection is not usable',
+            'TCP Provider: Error code 0x68',
+            'Name or service not known',
+        ]);
+    }
+
 
     /**
      * Begin a fluent query against a database table.
