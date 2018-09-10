@@ -436,12 +436,14 @@ abstract class Model extends IlluminateModel {
      * @override
      * Define a polymorphic, inverse one-to-one or many relationship.
      *
-     * @param  string  $name
-     * @param  string  $type
-     * @param  string  $id
-     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+     * @param  string $name
+     * @param  string $type
+     * @param  string $id
+     * @param null $ownerKey
+     * @return MorphedByOne|MorphTo
      */
-    public function morphTo($name = null, $type = null, $id = null)
+
+    public function morphTo($name = null, $type = null, $id = null, $ownerKey = null)
     {
 
         // When the name and the type are specified we'll return a MorphedByOne
