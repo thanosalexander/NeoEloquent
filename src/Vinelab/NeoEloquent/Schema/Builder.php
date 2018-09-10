@@ -10,14 +10,14 @@ class Builder {
      *
      * @var \Illuminate\Database\ConnectionInterface
      */
-    protected $conn;
+    public $conn;
 
     /**
      * The Blueprint resolver callback.
      *
      * @var Closure
      */
-    protected $resolver;
+    public $resolver;
 
     /**
      * @param  \Illuminate\Database\ConnectionInterface  $conn

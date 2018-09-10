@@ -26,7 +26,7 @@ class Builder extends IlluminateBuilder {
      *
      * @var array
      */
-    protected $mutations = array();
+    public $mutations = array();
 
     /**
      * Find a model by its primary key.
